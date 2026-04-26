@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Blog - Bright Explorers Uganda</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <div class="logo">
+            <img src="https://img.icons8.com/color/48/mountain.png" alt="logo"> 
+            <span>Bright Explorers Uganda</span>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="services.html">Safaris & Tours</a>
+            <a href="about.html">About Us</a>
+            <a href="blog.html" class="active">Blog</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="header-cta">
+            <a href="contact.html" class="btn-outline">Plan Your Trip</a>
+        </div>
+        <button class="mobile-toggle" id="mobileToggle">
+            <i class="fas fa-bars"></i>
+        </button>
+    </header>
+
+    <main class="section blog-page" style="padding-top: 120px; max-width: 1200px; margin: 0 auto;">
+        <h1 class="page-title" data-aos="fade-down">Our Travel Blog</h1>
+        <p class="page-subtitle" data-aos="fade-up">Tips, stories, and inspiration from the Pearl of Africa.</p>
+        
+        <div class="blog-grid" data-aos="fade-up">
+            <article class="blog-card">
+                <img src="https://images.pexels.com/photos/2139815/pexels-photo-2139815.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Gorilla trekking">
+                <h2>10 Essential Tips for Gorilla Trekking in Bwindi</h2>
+                <p>From packing the right boots to understanding gorilla etiquette – our guide ensures you’re fully prepared for the adventure of a lifetime.</p>
+                <a href="#" class="btn-small">Read More</a>
+            </article>
+            <article class="blog-card">
+                <img src="https://images.pexels.com/photos/3601425/pexels-photo-3601425.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Kidepo Valley">
+                <h2>Why Kidepo Valley Should Be Your Next Safari Destination</h2>
+                <p>Untouched, remote, and breathtakingly beautiful – Kidepo offers a safari experience like no other. Discover what makes it special.</p>
+                <a href="#" class="btn-small">Read More</a>
+            </article>
+            <article class="blog-card">
+                <img src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Cultural dance">
+                <h2>How to Experience Uganda’s Culture Respectfully</h2>
+                <p>Learn how to engage with local communities, from the Batwa to the Karamojong, in a way that honours tradition and supports local economies.</p>
+                <a href="#" class="btn-small">Read More</a>
+            </article>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3>Bright Explorers Uganda</h3>
+                <p>Your trusted local travel partner. We craft authentic, safe, and unforgettable journeys through Uganda’s most beautiful landscapes.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Safaris & Tours</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="blog.html">Travel Blog</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="booking-terms.html">Booking Terms</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Info</h3>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Plot 24, Kampala Road, Kakeeka-Mengo</li>
+                    <li><i class="fas fa-phone"></i> +256 700 123456</li>
+                    <li><i class="fas fa-envelope"></i> info@brightexplorers.co.ug</li>
+                    <li><i class="fas fa-clock"></i> Mon-Fri: 8AM - 6PM</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Newsletter</h3>
+                <p>Get the latest travel updates and exclusive deals.</p>
+                <form class="footer-newsletter">
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Bright Explorers Uganda. All rights reserved. | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+            <p>Designed with love for the Pearl of Africa.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({ once: true, offset: 100 });
+        window.addEventListener('scroll', () => {
+            document.getElementById('header').classList.toggle('scrolled', window.scrollY > 50);
+        });
+        document.getElementById('mobileToggle').addEventListener('click', () => {
+            document.querySelector('nav').classList.toggle('open');
+        });
+        document.querySelectorAll('.footer-newsletter').forEach(form => {
+            form.addEventListener('submit', e => {
+                e.preventDefault();
+                alert('Subscribed successfully!');
+                form.reset();
+            });
+        });
+    </script>
+</body>
+</html>

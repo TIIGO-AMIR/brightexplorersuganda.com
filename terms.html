@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service - Bright Explorers Uganda</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <div class="logo">
+            <img src="https://img.icons8.com/color/48/mountain.png" alt="logo"> 
+            <span>Bright Explorers Uganda</span>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="services.html">Safaris & Tours</a>
+            <a href="about.html">About Us</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="header-cta">
+            <a href="contact.html" class="btn-outline">Plan Your Trip</a>
+        </div>
+        <button class="mobile-toggle" id="mobileToggle">
+            <i class="fas fa-bars"></i>
+        </button>
+    </header>
+
+    <main class="section legal-page" style="padding-top: 120px; max-width: 900px; margin: 0 auto;">
+        <h1 class="page-title" data-aos="fade-down">Terms of Service</h1>
+        <div class="legal-content" data-aos="fade-up">
+            <p><strong>Effective Date:</strong> June 1, 2026</p>
+            
+            <h2>1. Acceptance of Terms</h2>
+            <p>By accessing or using the Bright Explorers Uganda website, you agree to be bound by these Terms of Service. If you do not agree, please discontinue use immediately.</p>
+
+            <h2>2. Use of Website</h2>
+            <p>The content on this site is for general information and booking purposes only. You may not copy, reproduce, or distribute any material without our prior written consent.</p>
+
+            <h2>3. Intellectual Property</h2>
+            <p>All text, images, logos, and trademarks on this website are the property of Bright Explorers Uganda or its licensors. Unauthorised use is a violation of Uganda’s copyright and trademark laws.</p>
+
+            <h2>4. User Conduct</h2>
+            <p>You agree not to misuse our website by attempting to hack, scrape, or transmit any harmful code. You may only submit true and accurate information when making inquiries or bookings.</p>
+
+            <h2>5. Third‑Party Links</h2>
+            <p>Our site may contain links to third‑party websites. We are not responsible for the content or privacy practices of those sites.</p>
+
+            <h2>6. Limitation of Liability</h2>
+            <p>Bright Explorers Uganda shall not be liable for any direct, indirect, or consequential loss arising from the use of this website or reliance on its content, except as required by law.</p>
+
+            <h2>7. Governing Law</h2>
+            <p>These terms are governed by the laws of the Republic of Uganda. Any disputes shall be resolved in the courts of Kampala, Uganda.</p>
+
+            <h2>8. Changes to Terms</h2>
+            <p>We reserve the right to modify these terms at any time. Continued use after changes constitutes acceptance of the new terms.</p>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3>Bright Explorers Uganda</h3>
+                <p>Your trusted local travel partner. We craft authentic, safe, and unforgettable journeys through Uganda’s most beautiful landscapes.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Safaris & Tours</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="blog.html">Travel Blog</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="booking-terms.html">Booking Terms</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Info</h3>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Plot 24, Kampala Road, Kakeeka-Mengo</li>
+                    <li><i class="fas fa-phone"></i> +256 700 123456</li>
+                    <li><i class="fas fa-envelope"></i> info@brightexplorers.co.ug</li>
+                    <li><i class="fas fa-clock"></i> Mon-Fri: 8AM - 6PM</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Newsletter</h3>
+                <p>Get the latest travel updates and exclusive deals.</p>
+                <form class="footer-newsletter">
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Bright Explorers Uganda. All rights reserved. | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+            <p>Designed with love for the Pearl of Africa.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({ once: true, offset: 100 });
+        window.addEventListener('scroll', () => {
+            document.getElementById('header').classList.toggle('scrolled', window.scrollY > 50);
+        });
+        document.getElementById('mobileToggle').addEventListener('click', () => {
+            document.querySelector('nav').classList.toggle('open');
+        });
+        document.querySelectorAll('.footer-newsletter').forEach(form => {
+            form.addEventListener('submit', e => {
+                e.preventDefault();
+                alert('Subscribed successfully!');
+                form.reset();
+            });
+        });
+    </script>
+</body>
+</html>

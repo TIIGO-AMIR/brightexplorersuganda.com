@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Terms - Bright Explorers Uganda</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <div class="logo">
+            <img src="https://img.icons8.com/color/48/mountain.png" alt="logo"> 
+            <span>Bright Explorers Uganda</span>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="services.html">Safaris & Tours</a>
+            <a href="about.html">About Us</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="header-cta">
+            <a href="contact.html" class="btn-outline">Plan Your Trip</a>
+        </div>
+        <button class="mobile-toggle" id="mobileToggle">
+            <i class="fas fa-bars"></i>
+        </button>
+    </header>
+
+    <main class="section legal-page" style="padding-top: 120px; max-width: 900px; margin: 0 auto;">
+        <h1 class="page-title" data-aos="fade-down">Booking Terms & Conditions</h1>
+        <div class="legal-content" data-aos="fade-up">
+            <p><strong>Effective Date:</strong> January 1, 2026</p>
+            
+            <h2>1. Payment</h2>
+            <p>A 30% deposit is required within 7 days of booking confirmation. The remaining balance must be paid 45 days before departure. For bookings made within 45 days, full payment is due immediately. We accept Mobile Money, Visa, Mastercard, and bank transfers. All prices are in US Dollars unless otherwise stated.</p>
+            
+            <h2>2. Cancellation & Refunds</h2>
+            <ul>
+                <li>Cancellation more than 60 days before departure: full refund minus $100 admin fee.</li>
+                <li>59-30 days: 50% refund of the total package cost.</li>
+                <li>29-15 days: 25% refund.</li>
+                <li>14 days or less: no refund.</li>
+                <li>Gorilla permits and flight tickets are non-refundable once purchased.</li>
+            </ul>
+            
+            <h2>3. Changes by the Client</h2>
+            <p>Any amendment to a confirmed booking is subject to an amendment fee of $30 per change, plus any additional costs from suppliers. Major changes (e.g., changing dates) are treated as a cancellation and rebooking.</p>
+            
+            <h2>4. Insurance</h2>
+            <p>Travel insurance covering medical evacuation, trip cancellation, and loss of personal property is mandatory for all participants. We require proof of insurance upon booking.</p>
+            
+            <h2>5. Liability</h2>
+            <p>Bright Explorers Uganda acts as an agent for hotels, airlines, and other suppliers. We are not liable for any injury, loss, or damage caused by third parties, force majeure, or government travel advisories.</p>
+            
+            <h2>6. Passports & Visas</h2>
+            <p>Clients are responsible for ensuring they have valid passports and the necessary visas for Uganda. We can provide invitation letters for visa support on request.</p>
+            
+            <h2>7. Complaints</h2>
+            <p>Any complaints must be reported immediately to our office or guide so we can resolve them promptly. Written complaints should be submitted within 14 days of trip completion.</p>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3>Bright Explorers Uganda</h3>
+                <p>Your trusted local travel partner. We craft authentic, safe, and unforgettable journeys through Uganda’s most beautiful landscapes.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Safaris & Tours</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="blog.html">Travel Blog</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="booking-terms.html">Booking Terms</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Info</h3>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Plot 24, Kampala Road, Kakeeka-Mengo</li>
+                    <li><i class="fas fa-phone"></i> +256 700 123456</li>
+                    <li><i class="fas fa-envelope"></i> info@brightexplorers.co.ug</li>
+                    <li><i class="fas fa-clock"></i> Mon-Fri: 8AM - 6PM</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Newsletter</h3>
+                <p>Get the latest travel updates and exclusive deals.</p>
+                <form class="footer-newsletter">
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Bright Explorers Uganda. All rights reserved. | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+            <p>Designed with love for the Pearl of Africa.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({ once: true, offset: 100 });
+        window.addEventListener('scroll', () => {
+            document.getElementById('header').classList.toggle('scrolled', window.scrollY > 50);
+        });
+        document.getElementById('mobileToggle').addEventListener('click', () => {
+            document.querySelector('nav').classList.toggle('open');
+        });
+        document.querySelectorAll('.footer-newsletter').forEach(form => {
+            form.addEventListener('submit', e => {
+                e.preventDefault();
+                alert('Subscribed successfully!');
+                form.reset();
+            });
+        });
+    </script>
+</body>
+</html>
