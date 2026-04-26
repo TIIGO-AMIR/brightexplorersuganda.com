@@ -102,7 +102,8 @@ nav a:hover, nav a.active { color: var(--gold); }
     background: var(--gold);
     color: #1e3c2f;
 }
-
+.mobile-toggle{
+    display:none;}
 .mobile-toggle {
     display: none;
     background: none;
